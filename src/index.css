@@ -8,6 +8,15 @@
     height: auto;
     margin: 0 auto;
 }
+::-moz-selection { /* Code for Firefox */
+    color: red;
+    background: yellow;
+}
+  
+::selection {
+color: red;
+background: yellow;
+}
 .h1-title{
     color: blueviolet;
     font-size: 41px;
@@ -41,4 +50,13 @@
     text-align: center;
     margin: 50px;
     width: fit-content;
+}
+.learnComponent{
+    display: block;
+    text-align: center;
+    background-color: beige;
+    border-radius: 20px;
+}
+li {
+    list-style: none;
 }

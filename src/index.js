@@ -15,6 +15,7 @@ const img1 = 'https://picsum.photos/300/350';
 const img2 = 'https://picsum.photos/300/350';
 const img4 = 'https://picsum.photos/300/350';
 const img3 = 'https://picsum.photos/300/350';
+const img5 = 'https://picsum.photos/300/350';
 // lo
 // console.log(`hello my country ${data1}`)
 ReactDom.render( 
@@ -29,6 +30,7 @@ ReactDom.render(
                   <img src={img2} alt="randomimage2" />
                   <img src={img3} alt="randomimage3" />
                   <img src={img4} alt="randomimage4" />
+                  <img src={img5} alt="randomimage5" />
                   <ol>
                     <li>S 1</li>
                     <li>S 2</li>

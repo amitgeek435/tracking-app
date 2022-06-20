@@ -6,6 +6,13 @@ import "./index.css";
 import App from './components/App';
 import Greetings from './components/Greeting';
 import Inlinestyle from './components/Inlinestyle';
+/**2 ways import components --- start--- */
+// import d22,{d2,helloLearn} from './components/Next';
+import * as next from './components/Next';
+/**2 ways import components --- end----- */
+import Calc from './components/Calc';
+
+// import add, { mul, sub, div } from './components/Simplecalc';
 
 // ReactDom.render('what to show', 'where to show', 'callback func');
 // ReactDom.render( <h1>Hello World!</h1>, document.getElementById('root'));
@@ -21,7 +28,7 @@ const img3 = 'https://picsum.photos/200/350';
 const img5 = 'https://picsum.photos/200/350';
 
 
-
+console.log(next);
 // console.log(`hello my country ${data1}`)
 ReactDom.render( 
                   // <React.Fragment>
@@ -46,13 +53,22 @@ ReactDom.render(
                       <img src={img5} alt="randomimage5" />
                     </div>
 
-                    <ol>
-                      <li>S 1</li>
-                      <li>S 2</li>
-                      <li>S 3</li>
-                    </ol>
 
                     <div className='learnComponent'>
+                      <ol>
+                        <li>S 1</li>
+                        <li>S 2</li>
+                        <li>S 3</li>
+                        {/* <li>{d22}</li>
+                        <li>{d2}</li>
+                        <li>{helloLearn()}</li> */}
+                        <li> {next.default} </li>
+                        <li>{next.d2}</li>
+                        <li>{next.helloLearn('react')}</li>
+
+                        <Calc />
+                        
+                      </ol>
                         <App />
                     </div>
                   </div>

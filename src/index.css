@@ -60,3 +60,6 @@ background: yellow;
 li {
     list-style: none;
 }
+li span{
+    color:blue;
+}

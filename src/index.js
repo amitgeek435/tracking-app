@@ -24,11 +24,36 @@ var secondp = {
   fontWeight: '600',
   fontFamily: '"Sofia", sans-serif'
 };
+
+// let crDate = new Date(2022, 6, 5, 19);
+let crDate = new Date();
+crDate = crDate.getHours();
+console.log(crDate);
+const cStyle = {
+};
+
+var greetingmsg;
+if ( crDate >= 1 && crDate < 12 ) {
+  greetingmsg = "Good Morning";
+  cStyle.color = 'green';
+}else if ( crDate >= 12 && crDate < 20 ) {
+  greetingmsg = "Good After Noon";
+  cStyle.color = '#CCCC00';
+} else {
+  greetingmsg = "Good Night";
+  cStyle.color = 'black';
+}
+// console.log(cStyle);
 // console.log(`hello my country ${data1}`)
 ReactDom.render( 
                   // <React.Fragment>
                   <>
                   <div className="container">
+
+                    <div className='greeting'>
+                      <h2 className='h2-hello'>Hello Friend, <span style={cStyle}>{greetingmsg}</span></h2>
+                    </div>
+
                     <h1 className='h1-title'>Hello World! {`${data1} ${randnum(5,1)}`}</h1> {/* template literals */}
 
                     <h2 contentEditable="true" style={{color: '#fa9191',textAlign:'center',textTransform: 'capitalize',fontWeight: '600',fontFamily: '"Sofia", sans-serif'}}>This Is Content Editable.</h2>

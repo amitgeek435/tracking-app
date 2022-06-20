@@ -23,4 +23,22 @@
 .imageDiv{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+.greeting{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    border-radius: 20px;
+}
+.h2-hello{
+    padding: 20px;
+    background-color: antiquewhite;
+    color: rgb(10, 24, 233);
+    border-radius: 20px;
+    text-align: center;
+    margin: 50px;
+    width: fit-content;
 }

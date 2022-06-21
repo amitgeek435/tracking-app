@@ -1,7 +1,7 @@
 // var React = require('react');
 // var ReactDom  = require('react-dom');
 import React from 'react';
-import ReactDom from 'react-dom';
+import ReactDom from 'react-dom/client';
 import "./index.css";
 import App from './components/App';
 import Greetings from './components/Greeting';
@@ -30,7 +30,8 @@ const img5 = 'https://picsum.photos/200/350';
 
 console.log(next);
 // console.log(`hello my country ${data1}`)
-ReactDom.render( 
+const root = ReactDom.createRoot(document.getElementById('root'));
+root.render( 
                   // <React.Fragment>
                   <>
                   <div className="container">
@@ -74,5 +75,4 @@ ReactDom.render(
                   </div>
                   </>
                   // </React.Fragment>
-                  , document.getElementById('root')
                 );

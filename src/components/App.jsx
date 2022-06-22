@@ -1,18 +1,26 @@
 import React from "react";
 
-import Heading from './Heading';
-import Paragraph from './Paragraph';
-import OrderList from './Orderlist';
+import Heading from "./Heading";
+import Paragraph from "./Paragraph";
+import OrderList from "./Orderlist";
+import Lhook from "./Learnhook";
+import Learnstate from "./Learnstate";
+import LiveClock from "./LiveClock";
+import LearnEvent from "./LearnEvents";
 
-function App(){
-    return(
+function App() {
+  return (
     <>
-        <Heading />
-        <Paragraph />
-        <OrderList />
-        <Paragraph />
-        <Heading />
+      <Lhook />
+      <Learnstate />
+      <LiveClock />
+      <Heading />
+      <Paragraph />
+      <OrderList />
+      <Paragraph />
+      <Heading />
+      <LearnEvent />
     </>
-    );
+  );
 }
 export default App;

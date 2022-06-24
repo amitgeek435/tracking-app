@@ -28,7 +28,7 @@ const Lhook = () => {
         className="dncnum mb-4 mx-2"
         size="sm"
       >
-        Dnc Click Me -
+        -
       </Button>
       <Button
         variant="primary"
@@ -36,7 +36,7 @@ const Lhook = () => {
         onClick={IncNum}
         size="sm"
       >
-        Tnc Click Me +
+        +
       </Button>
     </>
   );

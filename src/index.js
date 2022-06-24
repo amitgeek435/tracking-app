@@ -14,6 +14,7 @@ import Calc from "./components/Calc";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Newform from "./components/Newform";
 import LoginForm from "./components/Loginform";
+import "bootstrap/dist/js/bootstrap.min.js";
 // import add, { mul, sub, div } from './components/Simplecalc';
 
 // ReactDom.render('what to show', 'where to show', 'callback func');

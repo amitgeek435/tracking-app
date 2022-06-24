@@ -1,6 +1,7 @@
 // import Form from "react-bootstrap/Form";
 import { useState } from "react";
 import Button from "react-bootstrap/esm/Button";
+
 const Newform = () => {
   const [name, setName] = useState("");
   const [pass, setPass] = useState("");

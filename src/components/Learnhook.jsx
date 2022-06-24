@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "react-bootstrap";
 
 const Lhook = () => {
-  const state = useState();
+  // const state = useState();
   //console.log(state);
   let [count, setCount] = useState(1);
 
@@ -11,10 +11,12 @@ const Lhook = () => {
     setCount(count);
   };
   const DncNum = () => {
-    if (count !== 1) {
+    if (count > 0) {
       count--;
+      setCount(count);
+    } else {
+      setCount(0);
     }
-    setCount(count);
   };
   return (
     <>

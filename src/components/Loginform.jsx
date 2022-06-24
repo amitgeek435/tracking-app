@@ -15,7 +15,6 @@ const Loginform = () => {
     // let val = event.target.value;
     const { value, name } = event.target;
     setfullName((preVal) => {
-      console.log(preVal);
       return {
         ...preVal,
         [name]: value,

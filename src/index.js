@@ -16,6 +16,7 @@ import Newform from "./components/Newform";
 import LoginForm from "./components/Loginform";
 import "bootstrap/dist/js/bootstrap.min.js";
 // import add, { mul, sub, div } from './components/Simplecalc';
+import Accordion from "./components/accordian/accordion";
 
 // ReactDom.render('what to show', 'where to show', 'callback func');
 // ReactDom.render( <h1>Hello World!</h1>, document.getElementById('root'));
@@ -72,6 +73,7 @@ root.render(
     </div>
     <br />
     <br />
+    <Accordion />
   </>
   // </React.Fragment>
 );

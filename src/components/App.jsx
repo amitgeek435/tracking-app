@@ -7,6 +7,7 @@ import Lhook from "./Learnhook";
 import Learnstate from "./Learnstate";
 import LiveClock from "./LiveClock";
 import LearnEvent from "./LearnEvents";
+// import LearnAccordian from "./accordian/LearnAccordian";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Lhook />
       <Learnstate />
       <LiveClock />
+      {/* <LearnAccordian /> */}
       <Heading />
       <Paragraph />
       <OrderList />
